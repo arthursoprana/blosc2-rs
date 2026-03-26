@@ -117,11 +117,7 @@ fn main() {
     }
 
     #[allow(unused_variables)]
-    let libname = if cfg!(target_os = "windows") {
-        "libblosc2"
-    } else {
-        "blosc2"
-    };
+    let libname = "blosc2";
 
     #[cfg(feature = "static")]
     println!("cargo:rustc-link-lib=static={}", libname);

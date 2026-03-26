@@ -1994,7 +1994,6 @@ pub fn free_resources() -> Result<()> {
 #[cfg(test)]
 mod tests {
     use ctor::{ctor, dtor};
-    use std::io::Cursor;
 
     use super::*;
 
